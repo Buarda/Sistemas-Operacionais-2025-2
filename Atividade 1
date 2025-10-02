@@ -1,0 +1,58 @@
+Exercícios Teóricos – Processos
+
+1- Qual a diferença entre programa e processo?
+A principal diferença é que o programa é um conjunto de instruções a serem seguidas, já o processo é a execução desse programa, incluindo seu estado e recursos alocados.
+
+2- Quais são os estados de um processo e quando ocorrem as transições?
+Novo: foi criado e está aguardando alocação de recursos.
+Pronto: está apto a ser executado, aguardando a CPU.
+Executando: está atualmentte em execução na CPU.
+Bloqueado: aguardando um evento externo.
+Finalizado: foi finalizado e liberou os recursos alocados.
+
+3- O que contém um Process Control Block (PCB)?
+Todas as informações para gerenciar um processo, incluindo seu ID (PID), estado atual, prioridade, registradores da CPU (como o contador de programa), 
+informações de memória e alocação de dispositivos de entrada/saída (E/S).
+
+4- O que acontece com os recursos de um processo quando ele termina?
+Os recursos que estavam alocados precisa ser liberados para que outros processos possam usar, se não o sistema pode ter vazamento de memória, deadlocks e desperdícios de recursos.
+
+5- Qual a diferença entre fork() e exec() no UNIX?
+O fork() duplica o processo escolhido, já o exec() faz a substituição do processo atual por outro processo.
+
+6- Como funciona a hierarquia de processos em UNIX?
+Funciona em um hierarquia em árvore, ou seja, cada processo tem um processo pai e pode ter processos filhos.
+
+7- Compare memória compartilhada e troca de mensagens (IPC).
+A memória compartilhada é mais rápida, mas exige cuidado com concorrência, já a troca de mensagens é mais segura e simples, porém é menos eficiente.
+
+8- Cite exemplos de chamadas de sistema usadas em IPC.
+Pipes/FIFOs: pipe(), mkfifo().
+Filas de mensagens: msgget(), msgsnd().
+Memória compartilhada: shmget(), shmat().
+Semáfaros: semget(), semop().
+Sockets: socket(), bind().
+
+9- Por que é importante que o sistema operacional faça gerenciamento de processos?
+Garante que múltiplos programas possam ser executados de forma eficiente, segura e organizada.
+
+10- Explique a diferença entre processos independentes e processos cooperativos.
+Os processos independentes não afetam e não são afetados por outros processos em execução no sistema, já os processos cooperativos dependem ou influenciam outros porcessos.
+
+11- O que é um processo zumbi em UNIX/Linux?
+É um processo que já terminou a execução, porém ainda mantém uma entrada na tabela de processos do sistema, ou seja, ele não está mais ativo porém as informações sobre ele 
+ainda estão no sistema.
+
+12- Explique a diferença entre chamadas bloqueantes e não bloqueantes em IPC.
+As bloqueantes o processo fica esperando até que a operação de comunicação seja concluída, já as não bloqueantes o processo não espera a conclusão da operação.
+
+13- Qual a diferença entre processo pesado (process) e thread (processo leve)?
+O process são instâncias de programas isolados com seus próprios espaços de memória, já o processo leve são unidades de execução que compartilham o espaço de memória
+e recursos de um processo pai.
+
+14- Por que sistemas operacionais multiprogramados precisam de troca de contexto (context switch)?
+É o mecanismo fundamental que permite aos sistemas operacionais multiprogramados transformar uma CPU sequencial em uma "máquina paralela virtual", maximizando a eficiência e a usabilidade.
+
+15- Cite vantagens e desvantagens da comunicação via memória compartilhada.
+A memória compartilhada é excelente para desempenho em aplicações de alta performance e baixa latência, mas exige disciplina na programação para mitigar suas conveniências. Para cenários 
+mais simples ou seguros, alternativas como mensagens podem ser preferíveis.
