@@ -1,29 +1,35 @@
 Transformando Mainframes
 
 1- Porque uma empresa desejaria converter seu mainframe em um servidor de rede? Quais os benefícios para a empresa?
-Para converter um mainframe em um servidor de rede, uma empresa busca principalmente reduzir custos, modernizar sua infraestrutura e aumentar a flexibilidade no uso das aplicações. Ao fazer essa conversão, ela passa a integrar sistemas antigos com tecnologias
-mais atuais, facilita o acesso de funcionários e clientes às informações e ganha maior escalabilidade e conectividade, já que servidores de rede permitem mais integração com PCs e sistemas distribuídos.
+Para converter um mainframe em um servidor de rede, uma empresa busca principalmente reduzir custos, modernizar sua infraestrutura e aumentar a flexibilidade no uso das aplicações. Ao fazer essa conversão, ela passa a 
+integrar sistemas antigos com tecnologiasmais atuais, facilita o acesso de funcionários e clientes às informações e ganha maior escalabilidade e conectividade, já que servidores de rede permitem mais integração com PCs e 
+sistemas distribuídos.
 
 2- O que uma empresa precisa fazer para tornar seus banco de dados e aplicações, baseados em computadores centrais, acessíveis a funcionários e clientes que possuem navegadores de rede?
-Para tornar bancos de dados e aplicações de computadores centrais acessíveis por navegadores, a empresa precisa adaptar ou reescrever suas aplicações para o ambiente web, criar interfaces acessíveis via browser e utilizar servidores de aplicação que façam a 
-comunicação entre o mainframe e a internet. Também é necessário implementar protocolos de rede modernos, garantir a segurança das informações e usar middleware para integrar dados e processos do mainframe com sistemas web.
+Para tornar bancos de dados e aplicações de computadores centrais acessíveis por navegadores, a empresa precisa adaptar ou reescrever suas aplicações para o ambiente web, criar interfaces acessíveis via browser e 
+utilizar servidores de aplicação que façam a comunicação entre o mainframe e a internet. Também é necessário implementar protocolos de rede modernos, garantir a segurança das informações e usar middleware para integrar 
+dados e processos do mainframe com sistemas web.
 
 3- Quando uma empresa deve utilizar um mainframe como servidor de rede em lugar de recorrer exclusivamente a uma rede de servidores baseada em PCs?
-Uma empresa deve continuar usando um mainframe como servidor de rede quando precisa lidar com grandes volumes de transações com alta confiabilidade, além de necessitar segurança, disponibilidade contínua e robustez (características essenciais em setores como 
-bancos e telecomunicações). Nessas situações, uma rede baseada apenas em PCs pode não oferecer o mesmo nível de desempenho, estabilidade e tolerância a falhas que um mainframe oferece.
+Uma empresa deve continuar usando um mainframe como servidor de rede quando precisa lidar com grandes volumes de transações com alta confiabilidade, além de necessitar segurança, disponibilidade contínua e robustez 
+(características essenciais em setores como bancos e telecomunicações). Nessas situações, uma rede baseada apenas em PCs pode não oferecer o mesmo nível de desempenho, estabilidade e tolerância a falhas que um 
+mainframe oferece.
 
 
 Alternativas ao Windows
 
 1- Por que companhias como a Egghead e EarthLink estão optando por executar suas aplicações empresariais em Unix ou outros sistemas operacionais em lugar do Windows NT, e em não esperar pelo Windows 2000?
-Empresas como Egghead e EarthLink preferiram executar suas aplicações em Unix ou outros sistemas operacionais em vez de Windows NT porque, na época, o Unix oferecia mais estabilidade, segurança e desempenho. Além disso, o Windows 2000 ainda não havia sido lançado, 
-o que tornava arriscado esperar por um sistema novo e ainda não testado em larga escala. Assim, optar por Unix era uma escolha mais segura e confiável para aplicações empresariais críticas.
+Empresas como Egghead e EarthLink preferiram executar suas aplicações em Unix ou outros sistemas operacionais em vez de Windows NT porque, na época, o Unix oferecia mais estabilidade, segurança e desempenho. Além disso, 
+o Windows 2000 ainda não havia sido lançado, o que tornava arriscado esperar por um sistema novo e ainda não testado em larga escala. Assim, optar por Unix era uma escolha mais segura e confiável para aplicações 
+empresariais críticas.
 
 2- Por que a Aspect Telecommunications é capaz de comprar software aplicativo com base naquilo que faz para a empresa, e não com base em qual sistema operacional ele é executado?
-A Aspect Telecommunications consegue adquirir software com base na funcionalidade e não no sistema operacional porque utiliza padrões abertos e tecnologias que tornam suas aplicações portáveis entre diferentes plataformas. Isso significa que o foco está no que o software 
-é capaz de fazer e não no ambiente em que ele roda. Essa abordagem reduz a dependência de sistemas específicos, aumenta a flexibilidade e facilita a integração de novos sistemas.
+A Aspect Telecommunications consegue adquirir software com base na funcionalidade e não no sistema operacional porque utiliza padrões abertos e tecnologias que tornam suas aplicações portáveis entre diferentes plataformas. 
+Isso significa que o foco está no que o software é capaz de fazer e não no ambiente em que ele roda. Essa abordagem reduz a dependência de sistemas específicos, aumenta a flexibilidade e facilita a integração de novos 
+sistemas.
 
 3- Quais estratégias de négocios a Microsoft poderia adotar para recpturar o sucesso anterior do Windows NT? O uqe os concorrentes da MIcrosoft devem fazer para capitalizarem sua oportuniadade atual de negócios?
-Para recuperar o sucesso do Windows NT, a Microsoft poderia adotar estratégias como melhorar a segurança, a estabilidade e a interoperabilidade de seus sistemas. Além disso, poderia reduzir a complexidade administrativa, investir mais em padrões abertos e oferecer soluções 
-corporativas mais integradas e econômicas. Já os concorrentes da Microsoft deveriam aproveitar esse momento para reforçar o suporte técnico, destacar a estabilidade e segurança de suas plataformas, ampliar parcerias com desenvolvedores e facilitar a migração de empresas 
-interessadas em alternativas ao Windows, tudo isso mantendo custos competitivos e oferecendo maior flexibilidade tecnológica.
+Para recuperar o sucesso do Windows NT, a Microsoft poderia adotar estratégias como melhorar a segurança, a estabilidade e a interoperabilidade de seus sistemas. Além disso, poderia reduzir a complexidade administrativa, 
+investir mais em padrões abertos e oferecer soluções corporativas mais integradas e econômicas. Já os concorrentes da Microsoft deveriam aproveitar esse momento para reforçar o suporte técnico, destacar a estabilidade e 
+segurança de suas plataformas, ampliar parcerias com desenvolvedores e facilitar a migração de empresas interessadas em alternativas ao Windows, tudo isso mantendo custos competitivos e oferecendo maior flexibilidade 
+tecnológica.
