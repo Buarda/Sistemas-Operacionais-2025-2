@@ -1,38 +1,48 @@
 1- Qual a principal diferença na finalidade e na forma de acesso entre o Monitor de Atividade e o top? Como o Gerenciador de Tarefas se alinha com essa distinção?
-A principal diferença entre o Monitor de Atividade (macOS) e o top (Linux) está na forma de acesso e no tipo de interface: o Monitor de Atividade é uma ferramenta gráfica, com janelas, tabelas e gráficos, enquanto o top é totalmente baseado em terminal e 
-voltado para usuários que preferem comandos de texto. Já o Gerenciador de Tarefas (Windows) se alinha ao Monitor de Atividade por também ser uma ferramenta gráfica intuitiva e orientada ao uso visual, com abas e informações organizadas de forma acessível. 
-Enquanto o top é mais técnico e minimalista, os outros dois são voltados para visualização rápida e amigável.
+A principal diferença entre o Monitor de Atividade (macOS) e o top (Linux) está na forma de acesso e no tipo de interface: o Monitor de Atividade é uma ferramenta gráfica, com janelas, tabelas e gráficos, 
+enquanto o top é totalmente baseado em terminal e voltado para usuários que preferem comandos de texto. Já o Gerenciador de Tarefas (Windows) se alinha ao Monitor de Atividade por também ser uma ferramenta
+gráfica intuitiva e orientada ao uso visual, com abas e informações organizadas de forma acessível. Enquanto o top é mais técnico e minimalista, os outros dois são voltados para visualização rápida e amigável.
 
 2 -Como você usaria cada uma das três ferramentas para identificar qual processo está consumindo a maior parte da CPU em tempo real? Descreva os passos básicos para cada sistema operacional.
-No Windows, usando o Gerenciador de Tarefas, basta abrir a aba “Processos” e ordenar a coluna “CPU” para visualizar qual processo consome mais recursos. No macOS, o Monitor de Atividade também permite classificar os processos por uso de CPU na aba “CPU”. 
-Já no Linux, usando o top, é possível visualizar automaticamente os processos ordenados pelo maior consumo de CPU, e o usuário pode pressionar a tecla P para ordenar explicitamente por uso de CPU. Em todos os sistemas, basta observar os processos no topo da lista 
-para identificar o maior consumidor de processamento.
+No Windows, usando o Gerenciador de Tarefas, basta abrir a aba “Processos” e ordenar a coluna “CPU” para visualizar qual processo consome mais recursos. No macOS, o Monitor de Atividade também permite classificar 
+os processos por uso de CPU na aba “CPU”. Já no Linux, usando o top, é possível visualizar automaticamente os processos ordenados pelo maior consumo de CPU, e o usuário pode pressionar a tecla P para ordenar 
+explicitamente por uso de CPU. Em todos os sistemas, basta observar os processos no topo da lista para identificar o maior consumidor de processamento.
 
-3- O Monitor de Atividade e o Gerenciador de Tarefas apresentam detalhes sobre o uso de memória (como memória física e swap).Como o top em Linux exibe essa informação e quais métricas de memória são mais relevantes para entender o consumo de um processo?
-O Monitor de Atividade e o Gerenciador de Tarefas apresentam informações de memória física, cache, memória comprimida e uso de swap de forma visual. No top, essas informações aparecem no topo da tela, mostrando memória total, usada, livre e buffers/cache. As métricas 
-mais relevantes para estudar o consumo de memória de um processo incluem a memória residente (RAM efetivamente usada) e a memória virtual (espaço total alocado), além do uso de swap, que indica sobrecarga na memória física.
+3- O Monitor de Atividade e o Gerenciador de Tarefas apresentam detalhes sobre o uso de memória (como memória física e swap).Como o top em Linux exibe essa informação e quais métricas de memória são mais relevantes 
+para entender o consumo de um processo?
+O Monitor de Atividade e o Gerenciador de Tarefas apresentam informações de memória física, cache, memória comprimida e uso de swap de forma visual. No top, essas informações aparecem no topo da tela, mostrando memória 
+total, usada, livre e buffers/cache. As métricas mais relevantes para estudar o consumo de memória de um processo incluem a memória residente (RAM efetivamente usada) e a memória virtual (espaço total alocado), além do 
+uso de swap, que indica sobrecarga na memória física.
 
 4- Explique a importância do PID (ID do Processo) e como ele é exibido em cada uma das ferramentas. Como você usaria o PID para encerrar um processo que não responde em cada sistema operacional?
-O PID (Process ID) é essencial porque identifica unicamente cada processo em execução, permitindo ao sistema operacional e ao usuário controlá-lo individualmente. No Monitor de Atividade e no Gerenciador de Tarefas, o PID aparece em colunas específicas que podem ser 
-ativadas, e o usuário pode encerrar um processo selecionando-o e clicando em “Forçar Encerrar” ou “Finalizar Tarefa”. No Linux, o PID é exibido claramente no top, e para encerrar um processo basta usar o comando kill PID, ou kill -9 PID caso o processo esteja travado.
+O PID (Process ID) é essencial porque identifica unicamente cada processo em execução, permitindo ao sistema operacional e ao usuário controlá-lo individualmente. No Monitor de Atividade e no Gerenciador de Tarefas, 
+o PID aparece em colunas específicas que podem ser ativadas, e o usuário pode encerrar um processo selecionando-o e clicando em “Forçar Encerrar” ou “Finalizar Tarefa”. No Linux, o PID é exibido claramente no top, e 
+para encerrar um processo basta usar o comando kill PID, ou kill -9 PID caso o processo esteja travado.
 
 5- Descreva as principais diferenças na interface do usuário (UI) entre as três ferramentas. Qual delas é mais orientada a comandos de texto e qual é mais visual?
-As diferenças mais marcantes entre as interfaces são que o top é totalmente baseado em texto e comandos, sendo ideal para administradores experientes ou servidores sem interface gráfica. O Gerenciador de Tarefas é mais simples e visual, destinado ao uso cotidiano de 
-usuários de Windows. Já o Monitor de Atividade combina informações detalhadas com uma interface gráfica mais moderna e organizada. Entre todas, o top é o mais orientado a comandos de texto, enquanto o Gerenciador de Tarefas é o mais visual e amigável.
+As diferenças mais marcantes entre as interfaces são que o top é totalmente baseado em texto e comandos, sendo ideal para administradores experientes ou servidores sem interface gráfica. O Gerenciador de Tarefas é mais 
+simples e visual, destinado ao uso cotidiano de usuários de Windows. Já o Monitor de Atividade combina informações detalhadas com uma interface gráfica mais moderna e organizada. Entre todas, o top é o mais orientado 
+a comandos de texto, enquanto o Gerenciador de Tarefas é o mais visual e amigável.
 
-6- Como o Monitor de Atividade e o Gerenciador de Tarefas permitem inspecionar o tráfego de rede de diferentes aplicativos? Qual comando ou técnica similar é usada no Linux para obter informações detalhadas sobre a atividade de rede de processos?
-Tanto o Gerenciador de Tarefas quanto o Monitor de Atividade permitem inspeccionar o tráfego de rede por meio de abas específicas (“Rede” no Windows e “Rede” no macOS), onde mostram o uso de upload, download e conexões dos processos. No Linux, o top não oferece essa 
-funcionalidade diretamente, mas pode ser complementado pelo comando iftop, nethogs ou netstat, que exibem informações detalhadas sobre tráfego de rede em tempo real.
+6- Como o Monitor de Atividade e o Gerenciador de Tarefas permitem inspecionar o tráfego de rede de diferentes aplicativos? Qual comando ou técnica similar é usada no Linux para obter informações detalhadas sobre a 
+atividade de rede de processos?
+Tanto o Gerenciador de Tarefas quanto o Monitor de Atividade permitem inspeccionar o tráfego de rede por meio de abas específicas (“Rede” no Windows e “Rede” no macOS), onde mostram o uso de upload, download e conexões 
+dos processos. No Linux, o top não oferece essa funcionalidade diretamente, mas pode ser complementado pelo comando iftop, nethogs ou netstat, que exibem informações detalhadas sobre tráfego de rede em tempo real.
 
-7- O Monitor de Atividade e o Gerenciador de Tarefas possuem abas ou seções dedicadas para monitorar a atividade do disco (leitura/escrita). Qual a importância de monitorar o disco e como o top (ou uma ferramenta complementar do Linux) pode ser usado 
-para obter essa mesma informação?
-O Monitor de Atividade e o Gerenciador de Tarefas possuem abas que exibem atividades do disco, como taxa de leitura e escrita, permitindo ao usuário identificar processos que causam lentidão. No Linux, o top não mostra essa informação diretamente, mas ferramentas 
-complementares como iotop permitem monitorar o uso do disco em tempo real. O monitoramento do disco é importante para detectar gargalos de desempenho, quedas de velocidade e processos que causam sobrecarga em sistemas de armazenamento.
+7- O Monitor de Atividade e o Gerenciador de Tarefas possuem abas ou seções dedicadas para monitorar a atividade do disco (leitura/escrita). Qual a importância de monitorar o disco e como o top (ou uma ferramenta 
+complementar do Linux) pode ser usado para obter essa mesma informação?
+O Monitor de Atividade e o Gerenciador de Tarefas possuem abas que exibem atividades do disco, como taxa de leitura e escrita, permitindo ao usuário identificar processos que causam lentidão. No Linux, o top não mostra 
+essa informação diretamente, mas ferramentas complementares como iotop permitem monitorar o uso do disco em tempo real. O monitoramento do disco é importante para detectar gargalos de desempenho, quedas de velocidade e 
+processos que causam sobrecarga em sistemas de armazenamento.
 
-8- Em que medida o Monitor de Atividade e o Gerenciador de Tarefas são capazes de exibir a hierarquia de processos (processos pais e filhos)? E como o top pode ser configurado ou complementado com outro comando para mostrar essa hierarquia?
-O Monitor de Atividade e o Gerenciador de Tarefas mostram informações básicas sobre processos, mas exibem pouco sobre hierarquia de processos (processos pais e filhos). Já o top pode ser configurado para mostrar essa hierarquia, e outros comandos do Linux, como pstree, 
-exibem uma visão completa e estruturada dos processos, permitindo analisar dependências entre eles. Assim, o Linux oferece as ferramentas mais completas para visualizar a hierarquia de processos.
+8- Em que medida o Monitor de Atividade e o Gerenciador de Tarefas são capazes de exibir a hierarquia de processos (processos pais e filhos)? E como o top pode ser configurado ou complementado com outro comando 
+para mostrar essa hierarquia?
+O Monitor de Atividade e o Gerenciador de Tarefas mostram informações básicas sobre processos, mas exibem pouco sobre hierarquia de processos (processos pais e filhos). Já o top pode ser configurado para mostrar essa 
+hierarquia, e outros comandos do Linux, como pstree, exibem uma visão completa e estruturada dos processos, permitindo analisar dependências entre eles. Assim, o Linux oferece as ferramentas mais completas para visualizar 
+a hierarquia de processos.
 
-9- Qual das três ferramentas é mais adequada para monitoramento em ambientes de servidor (especialmente sem interface gráfica)? Justifique sua resposta, explicando como as características de cada uma se encaixam melhor em cenários de servidor ou de desktop.
-A ferramenta mais adequada para monitorar ambientes de servidor é o top (ou variantes como htop), porque servidores frequentemente não possuem interface gráfica, exigindo ferramentas leves e baseadas em terminal. Além disso, o top funciona bem em ambientes remotos via 
-SSH e consome poucos recursos. Já o Gerenciador de Tarefas e o Monitor de Atividade são mais indicados para desktops, pois dependem de interface gráfica e são projetados para usuários comuns, não para administração avançada.
+9- Qual das três ferramentas é mais adequada para monitoramento em ambientes de servidor (especialmente sem interface gráfica)? Justifique sua resposta, explicando como as características de cada uma se encaixam melhor 
+em cenários de servidor ou de desktop.
+A ferramenta mais adequada para monitorar ambientes de servidor é o top (ou variantes como htop), porque servidores frequentemente não possuem interface gráfica, exigindo ferramentas leves e baseadas em terminal. Além 
+disso, o top funciona bem em ambientes remotos via SSH e consome poucos recursos. Já o Gerenciador de Tarefas e o Monitor de Atividade são mais indicados para desktops, pois dependem de interface gráfica e são projetados 
+para usuários comuns, não para administração avançada.
